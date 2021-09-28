@@ -1,2 +1,19 @@
-# Control-Flow
-simple Control Flow
+apple_price = 5000
+uang = 50000
+inpu_count = input('anda mau membeli apel sebanyak : ')
+count = int(inpu_count)
+
+total_price = apple_price * count
+
+print('anda memberli ' + str(count) + ' apel' )
+
+print('anda membeli dengan ' + str(total_price) + ' Rupiah')
+
+if uang > total_price:
+    print('anda telah membeli ' + str(count) + ' apel')
+    print('uang anda tersisa ' + str(uang - total_price) + 'Rupiah')
+elif uang == total_price:
+    print('anda telah membeli ' + str(count) + ' apel')
+    print('uang anda habis')
+else:
+    print('uang anda tidak cukup')
